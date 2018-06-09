@@ -17,4 +17,10 @@ class Patient
     appointments << appointment
     appointment
   end
+  
+  def doctors
+    @appointments.map do |appointment|
+      appointment.doctor
+    end
+  end
 end
